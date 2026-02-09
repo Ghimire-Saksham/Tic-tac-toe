@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="choose.css">
+</head>
+<body>
+    <div class="start" id="start-page"  >
+<div class="top">
+
+<div class="score">
+<div id="scircle" class="dscore">
+   <div class="ssymbol" data-piece="circle"><div>Ｏ</div></div>
+   
+   <div class="fix">
+<div class="scoreboard">
+        <div>Circle:</div>
+        <div id="score_circle">0</div> 
+    </div>
+   </div>
+</div>
+<div id="scross" class="dscore">
+    <div class="ssymbol"><div  data-piece="cross">✖</div></div>
+    <div class="fix">
+<div class="scoreboard">
+        <div>Cross:</div>
+        <div id="score_cross">0</div> 
+    </div>
+    </div>
+    
+</div>
+
+</div>
+<div class="heading"><h3>Tic Tac Toe</h3></div>
+</div>
+
+
+
+
+     <div class="main">
+
+<div class="row1"> 
+    <div id="one" data-row="one" data-column="one" data-assigned="false" class="box" data-boxno="1" onclick="boxclick(this)"> </div>
+    <div id="two" data-row="one" data-column="two" data-assigned="false" class="box" data-boxno="2" onclick="boxclick(this)"> </div>
+    <div id="three" data-row="one" data-column="three" class="box" data-assigned="false" data-boxno="3" onclick="boxclick(this)"> </div>
+</div>
+
+
+
+
+<div class="row2"> 
+    <div id="four" data-row="two" data-column="one" class="box" onclick="boxclick(this)" data-boxno="4" data-assigned="false"> <!--span data-piece="cross">✖</span--></div>
+    <div id="five" data-row="two" data-column="two" class="box"onclick="boxclick(this)" data-boxno="5" data-assigned="false"> </div>
+    <div id="six" data-row="two" data-column="three" class="box"onclick="boxclick(this)" data-boxno="6" data-assigned="false"><!--span data-piece="circle">Ｏ</span--> </div>
+</div>
+
+
+<div class="row3"> 
+    <div id="seven" data-row="three" data-column="one" class="box" onclick="boxclick(this)" data-boxno="7" data-assigned="false"> </div>
+    <div id="eight" data-row="three" data-column="two" class="box" onclick="boxclick(this)" data-boxno="8" data-assigned="false"> </div>
+    <div id="nine" data-row="three" data-column="three" class="box" onclick="boxclick(this)" data-boxno="9" data-assigned="false"> </div>
+</div>
+
+ </div>
+
+
+<div class="bottom">
+
+<div class="start-game">
+<button onclick="changepage()" id="start-game-button"><p class="arrow">🡢</p><p class="status-info">Start Game</p><p></p></button>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+<div class="choose" style="display: none;">
+    <div class="choosebody">
+        <div class="choose-heading">Choose One:</div>
+        <div class="choose-bottom">
+       
+         <div class="choosebox" id="choose_circle" data-choose="circle" onclick="choosemanage(this)">
+            <div class="choose-adjust">
+                <span  data-piece="circle">Ｏ</span>
+                <div>First</div>
+            </div>
+            
+        </div>
+
+
+        <div class="choosebox" id="choose_cross" data-choose="cross" onclick="choosemanage(this)">
+            <div class="choose-adjust">
+                <span  data-piece="cross">✖</span>
+            <div>First</div>
+            </div>
+            
+        </div>
+
+        </div>
+    </div>
+</div>
+<div class="result" style="display: none;">
+    <div id="cross_win" class="win" style="display: none;">
+<div id="sign-cross">✖</div>
+<div class="result">Winner!</div>
+    </div>
+    <div id="circle_win" class="win" style="display: none;" >
+<div id="sign-circle">Ｏ</div>
+<div class="result">Winner!</div>
+    </div>
+    <div class="draw" style="display: none;">
+<div class="draw-fix"><div id="sign-draw"><div id="sign-circle">Ｏ</div><div id="sign-cross">✖</div></div></div>
+<div class="result">Draw!</div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

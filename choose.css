@@ -1,0 +1,75 @@
+.choose{
+height: 90vh;
+width: 22rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.choosebody{
+    display: flex;
+height: 50vh;
+width: 22rem;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+}
+.choose-heading{
+font-size: 3rem;
+font-weight: 700;
+color: aliceblue;
+
+}
+
+.choose-bottom{
+    gap:3rem;
+height: 30vh;
+width: 22rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.choosebox{
+    height: 4rem;
+background-color: azure;
+display: flex;
+width: 22rem;
+align-items: center;
+justify-content: center;
+border-radius: 1rem;
+box-shadow: 0 0.4rem rgb(99, 109, 116);
+transition:0.4s ease;
+}
+.choose-adjust{
+width: 20rem;
+height: 4rem;
+font-size: 1.8rem;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content:flex-start;
+
+}
+.choose-adjust span{
+color: rgb(95, 95, 95);
+font-size: 2.5rem;
+    width: 3rem;
+height: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.choose-adjust div{
+    width:15rem;
+    height: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.choosebox:hover{
+
+cursor:pointer;
+background-color: rgb(233, 231, 230);
+}
+
